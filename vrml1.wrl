@@ -1,0 +1,325 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+DEF Xc Transform {
+	scale	1 1.5 1
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    ambientIntensity	0.2
+				    diffuseColor	0.9 0.0855504 0.0153114
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	5
+			    radius	0.05
+		    }
+
+	    }
+
+	    Transform {
+		    translation	0 2.5 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	1 0.0396854 0.0201956
+					    emissiveColor	1 0.0184968 0.0769998
+				    }
+
+			    }
+
+			    geometry	Cone {
+				    bottomRadius	0.2
+				    height	0.3
+			    }
+
+		    }
+	    }
+	]
+}
+DEF Zc Transform {
+	rotation	-1 0 0  1.5708
+	scale	1 1.5 1
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    ambientIntensity	0.2
+				    diffuseColor	0.153473 0.0164562 0.9
+				    emissiveColor	0.00815487 0.117822 1
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	5
+			    radius	0.05
+		    }
+
+	    }
+
+	    Transform {
+		    translation	0 2.5 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	0.052359 0.0723894 0.8
+					    emissiveColor	0.00920522 0.0485181 1
+				    }
+
+			    }
+
+			    geometry	Cone {
+				    bottomRadius	0.2
+				    height	0.3
+			    }
+
+		    }
+	    }
+	]
+}
+DEF YC Transform {
+	rotation	0 0 1  1.5708
+	scale	1 1.5 1
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    ambientIntensity	0.2
+				    diffuseColor	0.0671669 0.9 0.225734
+				    emissiveColor	0.0654487 1 0.507686
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	5
+			    radius	0.05
+		    }
+
+	    }
+
+	    Transform {
+		    translation	0 2.5 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    ambientIntensity	0.2
+					    diffuseColor	0.191878 1 0.393908
+					    emissiveColor	0.0033375 1 0.293857
+				    }
+
+			    }
+
+			    geometry	Cone {
+				    bottomRadius	0.2
+				    height	0.3
+			    }
+
+		    }
+	    }
+	]
+}
+DEF map Transform {
+	translation	0 -5 0
+	children Shape {
+		appearance	Appearance {
+			material	Material {
+				ambientIntensity	0.2
+				diffuseColor	1 1 1
+				emissiveColor	0.9 0.9 0.9
+			}
+
+		}
+
+		geometry	Box {
+			size	40 1 40
+		}
+
+	}
+}
+DEF plane1 Transform {
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Sphere {
+			    radius	0.1
+		    }
+
+	    }
+
+	    DEF plane Transform {
+		    translation	0 0 0
+		    rotation	0 0 -1  0.785398
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+					}
+
+				}
+
+				geometry	Box {
+					size	0.2 0.2 0.2
+				}
+
+			}
+
+			DEF quadro Transform {
+				translation	0 0 0
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+							    ambientIntensity	0.2
+							    diffuseColor	0.4 0.4 0.4
+							    emissiveColor	0.1 0.1 0.1
+						    }
+
+					    }
+
+					    geometry	Sphere {
+						    radius	0.3
+					    }
+
+				    }
+
+				    Transform {
+					    translation	0 0 0
+					    rotation	0 1 0  0.785398
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+									ambientIntensity	0.2
+								}
+
+							}
+
+							geometry	Box {
+								size	5 0.2 0.3
+							}
+
+						}
+
+						DEF T1 Transform {
+							translation	2 0.1 0
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										ambientIntensity	0.2
+										diffuseColor	0.9 0.201799 0.219341
+										emissiveColor	0.9 0.179916 0.250196
+									}
+
+								}
+
+								geometry	Cylinder {
+									height	0.1
+									radius	1
+								}
+
+							}
+						}
+
+						DEF T2 Transform {
+							translation	-2 0.1 0
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										ambientIntensity	0.2
+										diffuseColor	0.00225188 0.0136638 0.9
+										emissiveColor	0.071464 0.00450944 0.9
+									}
+
+								}
+
+								geometry	Cylinder {
+									height	0.1
+									radius	1
+								}
+
+							}
+						}
+					    ]
+				    }
+
+				    DEF transform2 Transform {
+					    translation	0 0 0
+					    rotation	0 -1 0  0.785402
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+									ambientIntensity	0.2
+								}
+
+							}
+
+							geometry	Box {
+								size	5 0.2 0.3
+							}
+
+						}
+
+						DEF T1 Transform {
+							translation	2 0.1 0
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										ambientIntensity	0.2
+										diffuseColor	0.9 0.888588 0.00225188
+										emissiveColor	0.872258 0.9 0.00432109
+									}
+
+								}
+
+								geometry	Cylinder {
+									height	0.1
+									radius	1
+								}
+
+							}
+						}
+
+						DEF T2 Transform {
+							translation	-2 0.1 0
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										ambientIntensity	0.2
+										diffuseColor	0.027406 0.9 0.032398
+										emissiveColor	0.0289539 0.9 0.283935
+									}
+
+								}
+
+								geometry	Cylinder {
+									height	0.1
+									radius	1
+								}
+
+							}
+						}
+					    ]
+				    }
+				]
+			}
+		    ]
+	    }
+	]
+}
